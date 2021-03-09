@@ -1,0 +1,7 @@
+Tutorial: https://jekyllrb.com/docs/step-by-step/01-setup/
+
+Liquid filters: https://jekyllrb.com/docs/liquid/filters/
+
+Liquid tags:
+- https://shopify.github.io/liquid/tags/control-flow/
+- https://jekyllrb.com/docs/liquid/tags/

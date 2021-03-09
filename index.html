@@ -3,6 +3,7 @@
 # It lets Jekyll know to process the templating language, Liquid
 # Front matter is a snippet of YAML, which can be used to set variables
 
+layout: default		# This is the name of the layout we want to use within _layouts folder
 title: home
 
 ---
@@ -11,7 +12,7 @@ title: home
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>{{ page.title | capitalize }}</title>
+		<title>{{ page.title }}</title>
 	</head>
 	<body>
 		<h1>{{ "Hello World!" | downcase }}</h1>

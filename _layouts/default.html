@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>{{ page.title | capitalize }}</title>
+	</head>
+	<body>
+		{% include navigation.html %}
+		<!-- "content" is a special variable that returns the rendered content of the page on which it is called. -->
+		{{ content }}
+	</body>
+</html>

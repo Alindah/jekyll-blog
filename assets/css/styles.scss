@@ -1,0 +1,6 @@
+---
+# This empty front matter just tells Jekyll it needs to process the file.
+# Jekyll will generate a css file using this scss file.
+---
+
+@import "main";		// Looks for a file called "main.scss" in the _scss directory.

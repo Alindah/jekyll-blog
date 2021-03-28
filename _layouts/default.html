@@ -4,8 +4,20 @@
 		<meta charset="utf-8">
 		<title>{{ page.title | capitalize }}</title>
 		<link rel="stylesheet" href="/assets/css/styles.css">
+		{% feed_meta %}
+		{% seo %}
 	</head>
 	<body>
+		<!-- How to use conditionals for environments -->
+		{% if jekyll.environment == "production" %}
+			<p>
+				This text should only appear in the production environment.
+				<br>
+				Can be accessed by: 
+				<br>
+				>>> JEKYLL_ENV=production bundle exec jekyll build
+			</p>
+		{% endif %}
 		{% include navigation.html %}
 		<!-- "content" is a special variable that returns the rendered content of the page on which it is called. -->
 		{{ content }}
